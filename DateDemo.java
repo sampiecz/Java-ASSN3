@@ -36,6 +36,6 @@ public class DateDemo
         Date myDate = new Date(day, month, year);
 
         // Call methods
-        System.out.print(myDate.daysSinceJan1());
+        System.out.print("Days since January: " + myDate.daysSinceJan1() + "\n");
     }
 }
