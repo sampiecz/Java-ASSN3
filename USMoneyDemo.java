@@ -19,13 +19,11 @@ public class USMoneyDemo
 
         USMoney x = new USMoney(cents, dollars);
 
-        System.out.print(x.getDollars());
-        System.out.print(".");
-        System.out.print(x.getCents());
+        System.out.print("USMoney1: $" + x.getDollars() + "." + x.getCents() + "\n");
 
 
         // Get input from user
-        System.out.print("Enter an integer representing dollars: ");
+        System.out.print("\nEnter an integer representing dollars: ");
         dollars = keyScan.nextInt();
 
         System.out.print("Enter an integer representing cents: ");
@@ -33,16 +31,12 @@ public class USMoneyDemo
 
         USMoney y = new USMoney(cents, dollars);
 
-        System.out.print(y.getDollars());
-        System.out.print(".");
-        System.out.print(y.getCents());
+        System.out.print("USMoney2: $" + y.getDollars() + "." + y.getCents() + "\n");
 
         System.out.print("\n");
         USMoney thing = x.plus(y);
 
-        System.out.print(thing.getDollars());
-        System.out.print(".");
-        System.out.print(thing.getCents());
+        System.out.print("Result of plus: $" + thing.getDollars() + "." + thing.getCents() + "\n");
 
     }
 }
