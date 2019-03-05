@@ -44,4 +44,18 @@ public class USMoney
 		}
     }
 
+	public int getDollars()
+	{
+		return this.dollars;
+	}
+
+	public int getCents()
+	{
+		return this.cents;
+	}
+
+	public USMoney plus(USMoney param)
+	{
+		return new USMoney(this.cents + param.getCents(), this.dollars + param.getDollars());
+	}
 }

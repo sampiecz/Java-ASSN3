@@ -4,7 +4,8 @@ JC = javac
 .java.class: ; $(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-USMoney.java
+USMoney.java\
+USMoneyDemo.java
 
 default: classes
 
