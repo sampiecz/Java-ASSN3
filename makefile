@@ -5,7 +5,9 @@ JC = javac
 
 CLASSES = \
 USMoney.java\
-USMoneyDemo.java
+USMoneyDemo.java\
+Date.java\
+DateDemo.java
 
 default: classes
 
